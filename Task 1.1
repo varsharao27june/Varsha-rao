@@ -46,13 +46,20 @@ Task 1.4---------------Automation and workflow Rules
 
 TASK 1.5 --------------— REPORTING & DASHBOARD WORKFLOW
  
-Task1.6------------------logical bugs
+Task1.6------------------logical bugs-------This is for zoho crm
 
-1.Possible bugs can be while migrating the accounts ,contacts in zoho crm as well as well as in hubspot crm.
+1.Possible bugs can be while migrating the accounts ,contacts in zoho crm as well as  in hubspot crm.
 2.contact not associated to any deal can be left out as an orphaned entry in the crm unless and until it is taken care by other ways.
 3.silent failures like same email address ia allowed in zoho crm.
 
-1)
+1)issue:Can a deal exist without an owner? What does that do to pipeline reports? 
+>1.Steps to Reproduce (Attempt to "Unassign" a Deal)While you cannot leave the owner field empty, you can simulate unassigned deals by creating a "Dummy/System" user or by transferring ownership to an inactive user.
+1.Create a Dummy User (Optional): Go to Setup > Users and Control > Users > +New User and create a user named "Unassigned Pool."Navigate to Deals:
+2.Go to the Deals module.Create/Edit a Deal:
+3.Click +New Deal or open an existing deal.Change Owner: Locate the Deal Owner field.Reassign: Attempt to change the owner. Note: Zoho requires a user to be selected.
+4.Change the owner to the "Unassigned Pool" user created in Step 1.Save: Click Save.
+>Actual BehaviourThe Deal is successfully saved, but it is owned by the "Unassigned Pool" user.It does not appear in individual sales reps' "My Deals" view.It appears in the "All Deals" view or reports filtered by the "Unassigned Pool" owner.
+>Expected BehaviourIn a properly managed CRM, every deal should be owned by a functional, active user to ensure it is worked on.If a deal is created via API without an owner mapping, Zoho will typically assign it to the user whose API token was used.
 
  
 
