@@ -38,16 +38,23 @@ validations:1Unique Email: Zoho can validate if a contact's email already exists
 
 
 Task 1.4---------------Automation and workflow Rules
+
+TASK 1.5 --------------— REPORTING & DASHBOARD WORKFLOW
+ 
+Task1.6------------------logical bugs
+
+1.Possible bugs can be while migrating the accounts ,contacts in zoho crm as well as well as in hubspot crm.
+2.contact not associated to any deal can be left out as an orphaned entry in the crm unless and until it is taken care by other ways.
+3.silent failures like same email address ia allowed in zoho crm.
+
 1)
 
+ 
 
 
 
-
-
-
-
-
+2)issue Can you close a deal as Won if required fields are empty?
+Steps to Reproduce:Go to Setup > Customization > Modules and Fields > Deals.Make a field (e.g., "Amount") mandatory.Create a deal, fill in the field, and save.Edit the deal, remove the data from that field, and change the Stage to "Closed Won".Save.Actual Behaviour: The deal saves with empty required fields if the validation rule is not properly applied to the closing action.Expected Behaviour: A pop-up should alert the user that the field is mandatory to move to "Closed Won".
 
 
 
