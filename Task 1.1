@@ -76,6 +76,9 @@ Steps to Reproduce:
 6) Go to Reports and run a report including this deal.
 >Actual Behaviour:The deal moves back to the pipeline, but the Closing Date remains the original date (May 1, 2026). 
 > Expected Behaviour:Ideally, when a deal is reopened, the Closing Date should be updated to a future date to accurately reflect the new sales forecast, or a custom field should be used to track the original close date.
+
+4.isssue:Are automation logs accessible to a standard user, or only admins?
+>Steps to Reproduce (Viewing Audit Logs)Log into your Zoho CRM account.Click the Settings (gear icon) in the top right corner.Go to the Security Control section.Click on Audit Log.Actual BehaviorAs an Admin: The user sees a comprehensive list of all actions, including "Workflow," "Webhooks," or "Functions," performed by any user in the organization.As a Standard User: The user sees a filtered list showing only their own actions and those of their subordinates, with no visibility into organization-wide or other teams' automation triggers.Expected BehaviorThe system should restrict viewing capabilities based on the profile permission. Only profiles with "Administrator" privileges should be able to see the full audit trail of all automations, while standard users' access is filtered
    
 
 
