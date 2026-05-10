@@ -149,7 +149,21 @@ Assumptions and dependacies
 
 Task 3.2  --------------------------------------Test Suite Structure
 1.smoke tesx suite (high priority) 
-> Goal : verify critical functionality ( Dealopportunity creation and saving) is funtional after deployment.
-> test cases : create new deal,verfy mandatory fields verity saviing to database quick search for deal. 
+  > Goal : verify critical functionality ( Dealopportunity creation and saving) is funtional after deployment.
+  > test caes : create new deal,verfy mandatory fields verity saviing to database quick search for deal. 
+2.Functional test suite (detailed) 
+  > CRUD Operatinos : create, read update, delete or deactivate dealopportunity 
+  > Workflow Transitions : Validate field calculations ( e.g. Weighted Revenue Discount % Calculation ). 
+3. Integration & API Suite 
+  > Field Mapping : Verify updates when linked to Account / Contaclida objects. 
+  > API Validation : Validate GET,POST,PUT,DELETE requests for the Dealopportunity module. 
+4. Secrity/Permission Suite 
+  > Verify user role limitations ( e.g, Sales Rep can only role limitations ( e.g., Sales rep can only update their deals ; Managar can update all) 
+5. Negative Testing Suite 
+   > Verity error handling ( e.g,saving without required fields, invalid date formats negative deal amounts).
 
 
+ Task 3.3 ---------------------------------------Test 
+  
+
+ 
